@@ -16,7 +16,14 @@ print(" > Flat White")
 print("----------------------------")
 
 price = 0
-coffee = input("What coffee do you want? ").title()
+
+while True:
+   coffee = input("What coffee do you want? ").title()
+   if coffee in ["Espresso", "Americano", "Latte", "Cappuccino", "Macchiato", "Mocha", "Flat White"]:
+      break
+   else:
+      print("We dont have that Coffee. Please choose from the menu.")
+      
 if coffee=="Espresso":
    price = price + 2.50
 elif coffee=="Americano":
@@ -24,7 +31,7 @@ elif coffee=="Americano":
 elif coffee=="Latte":
    price = price + 2.50
 elif coffee=="Cappuccino":
-   price = price + 3
+   price = price + 3.00
 elif coffee=="Macchiato":
    price = price + 2.50
 elif coffee=="Mocha":
@@ -33,6 +40,7 @@ elif coffee=="Flat White":
    price = price + 2.50
 else:
    print("We dont have that Coffee.")
+
 
 size = input("What size you want? (Medium, Large, XL) ").title()
 if size=="Medium":

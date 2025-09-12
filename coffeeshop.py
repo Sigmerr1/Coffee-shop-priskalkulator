@@ -27,7 +27,7 @@ while True:
 if coffee=="Espresso":
    price = price + 2.50
 elif coffee=="Americano":
-   price = price + 3
+   price = price + 3.00
 elif coffee=="Latte":
    price = price + 2.50
 elif coffee=="Cappuccino":

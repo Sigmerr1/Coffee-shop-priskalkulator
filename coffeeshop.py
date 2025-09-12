@@ -42,7 +42,7 @@ else:
    print("We dont have that Coffee.")
 
 while True:
-   size = input("What size do you want? (Medium, Large, XL) ").title()
+   size = input("What size do you want? (Medium, Large, Xl) ").title()
    if size in ["Medium", "Large", "Xl"]:
       break
    else:
@@ -52,22 +52,26 @@ if size=="Medium":
    price = price + 0
 elif size=="Large":
    price = price + 1.00
-elif size=="XL":
+elif size=="Xl":
    price = price + 1.50
 else:
    print("We only have medium, large and XL.")
 
 while True:
-   takeaway = input("Eat in or take away? ").title()
+   takeaway = input("Eat In or Take Away? ").title()
    if takeaway in ["Eat In", "Take Away"]:
       break
    else:
       print("We cant provide that. Please choose to eat in or take away.")
 
-if takeaway=="Eat in":
+if takeaway=="Eat In":
    price = price + 0
-elif takeaway=="Take away":
+elif takeaway=="Take Away":
    price = price + 1.00
 
 print("----------------------------")
 print("Total Cost: £" + str(price))
+
+print("Thanks for visiting Leander´s Coffee Shop. Enjoy your " + size + " " + coffee + " :D")
+
+

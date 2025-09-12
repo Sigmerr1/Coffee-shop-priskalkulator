@@ -41,8 +41,13 @@ elif coffee=="Flat White":
 else:
    print("We dont have that Coffee.")
 
-
-size = input("What size you want? (Medium, Large, XL) ").title()
+while True:
+   size = input("What size do you want? (Medium, Large, XL) ").title()
+   if size in ["Medium", "Large", "Xl"]:
+      break
+   else:
+      print("We dont have that size, Please choose from menu.")
+   
 if size=="Medium":
    price = price + 0
 elif size=="Large":
@@ -52,7 +57,13 @@ elif size=="XL":
 else:
    print("We only have medium, large and XL.")
 
-takeaway = input("Eat in or take away? ").title()
+while True:
+   takeaway = input("Eat in or take away? ").title()
+   if takeaway in ["Eat In", "Take Away"]:
+      break
+   else:
+      print("We cant provide that. Please choose to eat in or take away.")
+
 if takeaway=="Eat in":
    price = price + 0
 elif takeaway=="Take away":

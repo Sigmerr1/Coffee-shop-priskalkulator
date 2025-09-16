@@ -74,4 +74,3 @@ print("Total Cost: £" + str(price))
 
 print("Thanks for visiting Leander´s Coffee Shop. Enjoy your " + size + " " + coffee + " :D")
 
-
